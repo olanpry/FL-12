@@ -1,0 +1,227 @@
+li.tm-nav-item:hover {
+    background-color: lightskyblue;
+    color: #fff;
+}
+
+#home, section, .tm-sidebar {
+    box-shadow: 0 0 10px 0px rgba(61, 55, 61, 0.7);
+}
+
+.tm-banner {
+    background-image: linear-gradient(to right, lightskyblue, burlywood);
+}
+
+.tm-banner-inner {
+    background: white;
+}
+
+.tm-banner-text {
+    text-shadow: 5px 5px 2px #333;
+    animation-name: move-left;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes move-left {
+   from{right:-200px}
+    to{right:0}
+}
+h2.tm-section-title {
+    text-align: center;
+}
+
+section > div.tm-content-box:nth-child(1) {
+    display: flex;
+    align-items: center;
+    max-height: 600px;
+}
+
+section > div.tm-content-box:nth-child(1) > .tm-team-img {
+    align-self: flex-end;
+}
+
+li.box.box-bg:hover {
+    background: lightgrey;
+    color: lightskyblue;
+    font-style: italic;
+}
+
+.heading, .blocks {
+    box-shadow: 0 0 10px 0px #333;
+    position: relative;
+}
+section{
+    position: relative;
+}
+section:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 20px solid transparent;
+    border-top: 20px solid lightskyblue;
+    border-left: 20px solid lightskyblue;
+    left: 0;
+    top: 0;
+}
+
+.heading h2 {
+    text-align: center;
+    color: lightskyblue;
+}
+
+.heading ol {
+    list-style: lower-alpha;
+}
+
+.heading ol > li {
+    text-indent: 7px;
+    position: relative;
+}
+
+.heading ol > li:before {
+    content: ">";
+    position: absolute;
+    left: -10px;
+}
+
+.heading ol > li:first-of-type a, .heading ol > li:nth-of-type(3) a {
+    text-decoration: underline;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.heading ol > li:first-of-type::after, .heading ol > li:nth-of-type(3)::after {
+    content: "New";
+    position: absolute;
+    font-size: small;
+    color: red;
+}
+
+.blocks h2 {
+    text-align: left;
+}
+
+.blocks p.tm-section-description+p:last-child {
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-style: italic;
+}
+
+.blocks li {
+    padding: 5px;
+}
+
+.blocks li p {
+   font-style: italic;
+}
+
+.blocks ul > li:nth-of-type(2n+1) {
+    background: lightskyblue;
+}
+.blocks li p:first-letter {
+    font-weight: bold;
+}
+p.tm-section-description{
+    text-indent: 25px;
+    line-height: 30px;
+}
+.contact-form input{
+   border:none;
+    border-bottom: 1px solid lightskyblue;
+}
+.contact-form textarea{
+    border: 1px solid lightskyblue;
+    position: relative;
+    background: url("../img/email-icon.png") right 10px bottom 10px no-repeat;
+    background-size: 30px;
+}
+.contact-form input:focus{
+    background: lightskyblue;
+}
+.contact-form{
+    text-align: right;
+}
+.btn-primary{
+    background: none;
+    color:lightskyblue;
+    border-color:lightskyblue;
+    padding: 1rem 1.3rem;
+}
+@media print {
+    .tm-sidebar, .tm-team-img, li.box, ul.gallery-container, .img-contact-us, #contact {
+        display: none;
+    }
+    .padding-medium{
+        padding-left:50px;
+        padding-right:50px;
+    }
+    section:before{
+        border:none;
+    }
+    .heading ol>li:before{
+        content: '';
+    }
+    .heading ol>li:first-of-type a, .heading ol>li:nth-of-type(3) a{
+        text-decoration: none;
+        font-variant: normal;
+        font-weight: normal;
+    }
+    .heading ol>li:first-of-type::after, .heading ol>li:nth-of-type(3)::after{
+        content: '';
+    }
+    .tm-banner {
+        background-image: none;
+    }
+    .tm-team-description-container {
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .tm-section-description:not(.carousel-description){
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #home {
+        display: block;
+        margin: 0 auto;
+    }
+    .tm-main-content{
+        padding-top: 0;
+    }
+    .tm-banner-text{
+        right:0;
+    }
+
+    .tm-content-box {
+        margin: 0;
+
+    }
+
+    .heading:before {
+        border: none;
+    }
+
+    .heading ol {
+        list-style: none;
+        width:40%;
+        margin: 0 auto;
+    }
+
+    .heading ol li:nth-of-type(2n+1) {
+        width: 100%;
+        height:30px;
+        text-align: right;
+    }
+    .heading ol li:nth-of-type(2n) {
+        width: 100%;
+        height:30px;
+        text-align: left;
+    }
+    .blocks h2{
+        text-align: center;
+    }
+    .blocks{
+        background: white;
+    }
+}
