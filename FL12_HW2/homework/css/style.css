@@ -17,9 +17,7 @@ li.tm-nav-item:hover {
 
 .tm-banner-text {
     text-shadow: 5px 5px 2px #333;
-    animation-name: move-left;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
+    animation: move-left 2.5s infinite;
     position: relative;
 }
 @keyframes move-left {
