@@ -1,0 +1,21 @@
+$header-bg: '../img/m-h-day.jpg';
+$buttoncolor: #699900;
+$header-text: #2c2f3c;
+$bg: white;
+$section-header-color: #2c2f3c;
+$section-card-bg: #21232e;
+$mark: #14a0c7;
+$gradient-right: #2d5fcf;
+$grey: #21232e;
+$button-color: $buttoncolor;
+$font: (
+        sans: 'Source Sans Pro',
+        inher: sans-serif,
+        hind: 'Hind'
+);
+$logo-font: map-get($font, hind);
+$footercolor: #21232e;
+$font-text: map-get($font, sans);
+$footer-textcolor: #c0c3ce;
+$footer-font: map-get($font, sans);
+$banner-color: #92b8ce;

@@ -1,0 +1,22 @@
+$header-bg:'../img/m-h-night.jpg';
+$buttoncolor:#E3AC00;
+$bg:#21232e;
+$section-card-bg:#3b3f50;
+$section-header-color:white;
+$grey:#3B3F50;
+$mark:#ff4e33;
+$gradient-right:#95314f;
+$header-text:white;
+$button-color:$buttoncolor;
+$font: (
+        sans: 'Source Sans Pro',
+        hind: 'Hind',
+        fresca: 'Fresca',
+        inher: sans-serif
+);
+$logo-font: map-get($font, fresca);
+$footercolor:$grey;
+$footer-textcolor:#c0c3ce;
+$font-text: map-get($font, fresca), map-get($font, inher);
+$footer-font: map-get($font, sans), map-get($font, inher);
+$banner-color:#92b8ce;
