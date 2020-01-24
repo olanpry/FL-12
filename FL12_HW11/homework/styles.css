@@ -1,0 +1,59 @@
+/* Todo: your styles go here*/
+p, div {
+    margin: 5px 0;
+    padding: 0;
+}
+
+#root {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.folder {
+    cursor: pointer;
+}
+
+.folderName, .file {
+    position: relative;
+    padding-left: 25px;
+}
+
+.folderName:hover, .file:hover {
+    background-color: rgba(150, 100, 100, 0.1);
+}
+
+.folderName::before, .file::before {
+    font-family: "Material Icons";
+    content: "folder";
+    font-size: 20px;
+    color: darkorange;
+    position: absolute;
+    top: -2px;
+    left: 0;
+}
+
+.folderName.active::before {
+    content: 'folder_open';
+}
+
+.file::before{
+    content: "insert_drive_file";
+    color: darkslategrey;
+}
+
+.subfolder {
+    padding-left: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: none;
+}
+
+.subfolder.open {
+    display: block;
+}
+
+.emptyMessage {
+    font-style: italic;
+    margin-left: 0;
+}
